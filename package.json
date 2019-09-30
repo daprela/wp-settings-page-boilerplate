@@ -1,0 +1,51 @@
+{
+  "name": "wp-settings-page-boilerplate",
+  "version": "1.0.0",
+  "pluginName": "WP Settings Page Boilerplate",
+  "description": "A collection of snippets to build settings pages more rapidly.",
+  "rootNamespace": "dapre_wpspb",
+  "author": "Giulio Daprela",
+  "email": "giulio.daprela@gmail.com",
+  "link": "https://giuliodaprela.com",
+  "license": "GPL-2.0",
+  "textDomain": "dapre-wpspb",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-wp-pot": "^2.3.5",
+    "gulp-zip": "^4.2.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daprela/wp-settings-page-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daprela/wp-settings-page-boilerplate/issues"
+  },
+  "homepage": "https://github.com/daprela/wp-settings-page-boilerplate#readme"
+}
