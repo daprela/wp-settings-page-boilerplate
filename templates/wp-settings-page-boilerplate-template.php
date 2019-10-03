@@ -195,6 +195,9 @@
 							</p>
 						</td>
 						<td>
+							<p class="submit">
+								<input type="submit" name="submit" id="submit" class="button button-secondary active" value="Save Changes">
+							</p>
 						</td>
 					</tr>
 

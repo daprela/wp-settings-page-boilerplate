@@ -97,7 +97,8 @@ export const scripts = () => {
 			filename: '[name].min.js'
 		},
 		externals: {
-			jquery: 'jQuery'
+			jquery: 'jQuery',
+			jqueryui: 'jQueryUI'
 		},
 	}))
 	.pipe(dest('assets/js'));
