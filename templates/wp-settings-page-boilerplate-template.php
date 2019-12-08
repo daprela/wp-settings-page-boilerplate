@@ -16,7 +16,7 @@
 						<th scope="row">Description for radio buttons</th>
 						<td>
 							<fieldset>
-								<legend class="screen-reader-text"><span>Legend for radio buttons</span></legend>
+								<legend class="screen-reader-text"><span>API to poll</span></legend>
 								<label for="radio_1">
 									<input id="radio_1" class="radio" type="radio" name="field_action[<?php echo $key ?>]" value="read" data-index="<?php echo $key ?>" checked />
 									<?php esc_html_e("Read","dapre-wpspb") ?>
@@ -62,20 +62,20 @@
 							</fieldset>
 						</td>
 
-						<!-- SELECT -->
+					<!-- SELECT -->
 					<tr>
 						<th scope="row"><label for="select">Description for select</label></th>
 						<td>
 							<fieldset>
 								<legend class="screen-reader-text"><span>Select</span></legend>
 								<select id="select" class="postform" name="select[<?php echo $key ?>]" data-index="<?php echo $key ?>" />
-								<option value="0">Monday</option>
-								<option value="1">Tuesday</option>
-								<option value="2" selected>Wednesday</option>
-								<option value="3">Thursday</option>
-								<option value="4">Friday</option>
-								<option value="5">Saturday</option>
-								<option value="6">Sunday</option>
+								<option value="0"><?php echo esc_attr( __( 'Monday' ) ); ?></option>
+								<option value="1"><?php echo esc_attr( __( 'Tuesday' ) ); ?></option>
+								<option value="2" selected><?php echo esc_attr( __( 'Wednesday' ) ); ?></option>
+								<option value="3"><?php echo esc_attr( __( 'Thursday' ) ); ?></option>
+								<option value="4"><?php echo esc_attr( __( 'Friday' ) ); ?></option>
+								<option value="5"><?php echo esc_attr( __( 'Saturday' ) ); ?></option>
+								<option value="6"><?php echo esc_attr( __( 'Sunday' ) ); ?></option>
 								</select>
 							</fieldset>
 						</td>
@@ -146,7 +146,7 @@
 						<td>
 							<fieldset>
 								<legend class="screen-reader-text"><span>Legend for email input</span></legend>
-								<input id="email_input" class="regular-text ltr" type="text" name="email_input[<?php echo $key ?>]" placeholder="name@youremail.com" value="" data-index="<?php echo $key ?>" />
+								<input id="email_input" class="regular-text ltr" type="email" name="email_input[<?php echo $key ?>]" placeholder="name@youremail.com" value="" data-index="<?php echo $key ?>" />
 								<p class="description" id="textinput-description">This is a regular email field.</p>
 							</fieldset>
 						</td>
